@@ -1,0 +1,157 @@
+.walletWrapper {
+  position: fixed;
+  right: 50px;
+  bottom: 42px;
+  width: 256px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+  .walletContent {
+    .accountDetail {
+      .center {
+        text-align: center;
+      }
+      .networkStatus {
+        height: 19px;
+        line-height: 19px;
+        .dot {
+          display: inline-block;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+        }
+        span {
+          height: 19px;
+          margin-left: 8px;
+          line-height: 19px;
+        }
+      }
+      .accountAddress {
+        padding-right: 2px;
+        padding-left: 18px;
+      }
+      .accountBalance {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 21px;
+        margin-bottom: 4px;
+        .balance {
+          max-width: 60%;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          margin-left: 20px;
+        }
+        span {
+          margin-left: 4px;
+        }
+        .refresh {
+          margin-left: 6px;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          font-size: 16px;
+        }
+      }
+    }
+    .accountList {
+      .listWrapper {
+        height: 180px;
+        margin: 8px 0;
+        ::-webkit-scrollbar {
+          width: 0;
+          height: 0;
+        }
+        .accountItem {
+          display: flex;
+          align-items: center;
+          padding: 6px 16px;
+          cursor: pointer;
+          .dot {
+            width: 6px;
+            height: 6px;
+            margin-right: 8px;
+            background-color: transparent;
+            border-radius: 50%;
+          }
+          .accountInfo {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            .content {
+              flex: 1;
+              .top {
+                display: flex;
+                justify-content: space-between;
+                height: 17px;
+                .name {
+                  width: 60%;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                }
+                .balance {
+                  width: 40%;
+                  text-align: right;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  span {
+                    padding-left: 4px;
+                  }
+                }
+              }
+              .bottom {
+                display: flex;
+                justify-content: space-between;
+                height: 17px;
+              }
+            }
+          }
+        }
+      }
+      .createBtn {
+        padding: 8px 22px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.warning {
+  display: block;
+  margin-bottom: 20px;
+
+  .dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 8px;
+    border-radius: 50%;
+  }
+  .switchChain {
+    cursor: pointer;
+    color: #106ebe;
+    text-decoration: underline;
+  }
+  .switchChain:hover {
+    font-style: italic;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingIcon {
+  animation-duration: 1.2s;
+  animation-fill-mode: both;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}

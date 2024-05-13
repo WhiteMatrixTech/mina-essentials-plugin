@@ -1,0 +1,7 @@
+{
+  "name": "mina-essentials-plugin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "xiadd <xiadd0102@gmail.com>",
+  "license": "MIT"
+}

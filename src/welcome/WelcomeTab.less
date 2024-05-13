@@ -1,0 +1,125 @@
+.welcomePage {
+  position: relative;
+  width: 100%;
+  padding: 60px 47px;
+  .head {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    height: 355px;
+    overflow: hidden;
+    background-image: url('../../../../../assets/static/img/sui/welcome-bg.png');
+    background-size: cover;
+    .welcomeBg {
+      width: 100%;
+      height: 100%;
+    }
+    .cadenceCat {
+      position: absolute;
+      width: 280px;
+      right: 80px;
+      bottom: 40px;
+    }
+  }
+
+  .divide {
+    width: 100%;
+    height: 1px;
+    margin: 48px 0;
+  }
+  .first-level-title {
+    margin-bottom: 48px;
+    font-size: 32px;
+  }
+  .first-level-title-base {
+    font-size: 32px;
+  }
+  .second-level-title {
+    margin-top: 13px;
+    margin-bottom: 25px;
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .ide-introduction {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 23px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 17px;
+    white-space: nowrap;
+    img {
+      width: 17px;
+      margin-right: 6px;
+      margin-left: 6px;
+    }
+  }
+  .ide-resource {
+    position: relative;
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: rgba(32, 33, 35, 0.7);
+    border-radius: 8px;
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      backdrop-filter: saturate(180%) blur(20px);
+      content: '';
+    }
+
+    .resource-card {
+      position: relative;
+      flex: 1;
+      right: 1px;
+      padding: 51px 20px 53px 20px;
+      text-align: center;
+      cursor: pointer;
+      &::before {
+        position: absolute;
+        top: 51px;
+        bottom: 53px;
+        left: 0;
+        width: 1px;
+        background-color: #273c46;
+        content: '';
+      }
+      &:first-child:before {
+        display: none;
+      }
+      .img-wrapper {
+        width: 100%;
+        height: 54px;
+        img {
+          height: 48px;
+          max-width: 110px;
+        }
+      }
+      .resource-card-title {
+        margin-top: 16px;
+        font-size: 17px;
+        line-height: 22px;
+      }
+      .resource-card-subtitle {
+        width: 100%;
+        height: 17px;
+        margin-top: 10px;
+        font-size: 13px;
+        line-height: 17px;
+      }
+    }
+  }
+  .template-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -55px;
+  }
+}
